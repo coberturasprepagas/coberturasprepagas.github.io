@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background-color: #012c45;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #00b499;
+}
+
+#hero {
+  background: url('https://via.placeholder.com/1200x400?text=Salud+Integral') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2em;
+}
+
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature {
+  background: #f2f2f2;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-cartilla {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  background: #012c45;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn-cartilla:hover {
+  background: #00b499;
+  color: #fff;
+}
+
+/* Marcas */
+#marcas {
+  padding: 60px 40px;
+  text-align: center;
+}
+.marcas-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+.marca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  padding: 24px 16px;
+}
+.marca img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #fff;
+  object-fit: contain;
+}
+.marca span {
+  font-size: 1.15em;
+  font-weight: 600;
+  color: #012c45;
+  margin-bottom: 6px;
+}
+.marca-planes {
+  width: 100%;
+  margin-top: 10px;
+}
+.plan {
+  background: #f2f2f2;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 12px 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  text-align: left;
+}
+.plan h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.08em;
+  color: #00b499;
+}
+.plan p {
+  margin: 0;
+  font-size: 0.97em;
+  color: #222;
+}
+
+footer {
+  background-color: #012c45;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Contacto con iconos de redes sociales */
+.contacto-social {
+  margin-top: 20px;
+}
+.contacto-social p {
+  margin: 12px 0;
+  font-size: 1.15em;
+}
+.contact-icon {
+  color: #012c45;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.contact-icon:hover {
+  color: #00b499;
+}
+.contact-icon i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features, .marcas-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+  .marca {
+    width: 95%;
+    max-width: 400px;
+  }
+  section {
+    padding: 36px 10px;
+  }
+}
